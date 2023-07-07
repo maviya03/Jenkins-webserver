@@ -6,6 +6,6 @@ WORKDIR /var/www/html
 RUN unzip bonativo.zip
 RUN rm -rf bonativo.zip &&\
     cp -rf bonativo/* . &&\
-    rm -rf bonativo &&
+    rm -rf bonativo
 EXPOSE 80
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
