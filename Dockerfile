@@ -6,5 +6,5 @@ RUN unzip bonativo.zip
 RUN rm -rf bonativo.zip &&\
     cp -rf bonativo/* . &&\
     rm -rf bonativo &&
-EXPOSE 80
+EXPOSE 8080
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
